@@ -11,7 +11,10 @@ class _InputPageState extends State<InputPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('BMI CALCULATOR'),
+        title: Text(
+          'BMI CALCULATOR',
+          style: TextStyle(fontFamily: 'Monospace'),
+        ),
       ),
       body: Column(
         children: [
@@ -50,6 +53,22 @@ class _InputPageState extends State<InputPage> {
                   ),
                 ),
               ],
+            ),
+          ),
+          Container(
+            child: Center(
+              child: Text(
+                'Calculate',
+                style: TextStyle(
+                    fontSize: 20.0),
+              ),
+            ),
+            margin: EdgeInsets.only(top: 10.0, bottom: 10.0),
+            width: MediaQuery.of(context).size.width * 0.50,
+            height: MediaQuery.of(context).size.width * 0.155,
+            decoration: BoxDecoration(
+              color: Color(0xFFEB1555),
+              borderRadius: BorderRadius.circular(50.0)
             ),
           ),
         ],
